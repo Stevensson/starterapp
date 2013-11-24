@@ -1,0 +1,17 @@
+     <div style="float: right"> 
+     	<% if user_signed_in? %>
+          	Hi <%= current_user.email %> <%= link_to "log out", destroy_user_session_path, :method => :delete %>
+    		<% else %>
+       			<%= link_to "Log in", new_user_session_path %>  /  <%= link_to "Register", new_user_registration_path %>
+  		<% end %> 
+	</div>
+  	
+  	<div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li <% if yield(:title) == "Home" %> class="active" <% end %> > <%= link_to "Home", root_path %></li> 
+            <li <% if yield(:title) == "About" %> class="active" <% end %> ><%= link_to "About", about_path %></li> 
+            <li <% if yield(:title) == "Posts" %> class="active" <% end %>> <%= link_to "Posts", posts_path %></li>  
+          
+        </ul>
+        <h3 class="text-muted"><%= link_to "Starterapp", root_path, class: "text-muted" %></h3>
+    </div>
