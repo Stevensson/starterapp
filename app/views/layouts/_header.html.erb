@@ -1,8 +1,8 @@
      <div style="float: right"> 
      	<% if user_signed_in? %>
-          	Hi <%= current_user.email %> <%= link_to "log out", destroy_user_session_path, :method => :delete %>
+          	Hi <%= current_user.username %> <%= link_to "log out", destroy_user_session_path, :method => :delete %>
     		<% else %>
-       			<%= link_to "Log in", new_user_session_path %>  /  <%= link_to "Register", new_user_registration_path %>
+       			<%= link_to "Sign in", new_user_session_path %>  /  <%= link_to "Register", new_user_registration_path %>
   		<% end %> 
 	</div>
   	

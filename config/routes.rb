@@ -5,6 +5,8 @@ Martinho::Application.routes.draw do
 
   root "pages#home"
   get "about" => "pages#about"
+  get "logged_in_home" => "pages#logged_in_home"
+  get "logged_out_message" => "pages#logged_out_message"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,11 +1,9 @@
-
-
-    <% provide(:title, 'Home') %>
+    <% provide(:title, 'Thanks for stopping by!') %>
 
       <div class="jumbotron">
-        <h1>Rock n Roll</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="<%= new_user_session_path %> " role="button">Sign up today</a></p>
+        <h1>Hope you come back again soon!</h1>
+        <p class="lead">We are going to miss you!</p>
+        <p ><%= link_to "Sign back in again?", new_user_session_path %> </p>
       </div>
 
       <div class="row marketing">
