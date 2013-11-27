@@ -36,6 +36,8 @@ gem 'devise', '~> 3.1.0.rc2'
 
 gem 'paperclip'
 
+gem 'role_model'
+
 gem 'griddler'
 
 gem 'formtastic'

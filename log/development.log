@@ -11636,3 +11636,863 @@ Processing by PagesController#home as HTML
   Rendered pages/home.html.erb within layouts/application (0.2ms)
   Rendered layouts/_header.html.erb (1.6ms)
 Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-27 16:22:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (8.2ms)
+Completed 200 OK in 275ms (Views: 256.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-11-27 16:22:43 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (86.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 100ms (Views: 96.5ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRolesMaskToUsers (20131127213811)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "roles_mask" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131127213811"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "users" SET "roles_mask" = ?, "updated_at" = ? WHERE "users"."id" = 11[0m  [["roles_mask", 1], ["updated_at", Wed, 27 Nov 2013 21:52:10 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:05 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a1ckNfn6WNEMZtaI1DHWWqiLictD+zJo8q70isyb+O8=", "user"=>{"username"=>"test", "email"=>"one@two.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'one@two.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (32.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 27 Nov 2013 21:54:14 UTC +00:00], ["email", "one@two.com"], ["encrypted_password", "$2a$10$RKdh6VK.NwzbNd.7rtz7GOOcu2NMjW7WKLiBfBnmhdcThZBDYTLUS"], ["updated_at", Wed, 27 Nov 2013 21:54:14 UTC +00:00], ["username", "test"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 12  [["last_sign_in_at", Wed, 27 Nov 2013 21:54:14 UTC +00:00], ["current_sign_in_at", Wed, 27 Nov 2013 21:54:14 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 27 Nov 2013 21:54:14 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/logged_in_home
+Completed 302 Found in 123ms (ActiveRecord: 36.7ms)
+
+
+Started GET "/logged_in_home" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+Processing by PagesController#logged_in_home as HTML
+  Rendered pages/logged_in_home.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 12 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 16:54:14 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"a1ckNfn6WNEMZtaI1DHWWqiLictD+zJo8q70isyb+O8="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 12 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/logged_out_message
+Completed 302 Found in 48ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/logged_out_message" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+Processing by PagesController#logged_out_message as HTML
+  Rendered pages/logged_out_message.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:28 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-11-27 16:55:30 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9rO31tD2LLGikxD4dHjajra7YNGrQ0Rj5+nWfrxyUbQ=", "user"=>{"username"=>"another", "email"=>"another@one.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'another@one.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 27 Nov 2013 21:55:39 UTC +00:00], ["email", "another@one.com"], ["encrypted_password", "$2a$10$lf6Mr.RFjYboyUxOQUPutuQVOCUaRhRLhCd0kiLQow9/XXs3mjmte"], ["updated_at", Wed, 27 Nov 2013 21:55:39 UTC +00:00], ["username", "another"]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."email" = 'another@one.com' AND "users"."id" != 13) LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.9ms)[0m  UPDATE "users" SET "username" = ?, "email" = ?, "encrypted_password" = ?, "created_at" = ?, "updated_at" = ?, "id" = ?, "roles_mask" = ? WHERE "users"."id" = 13  [["username", "another"], ["email", "another@one.com"], ["encrypted_password", "$2a$10$lf6Mr.RFjYboyUxOQUPutuQVOCUaRhRLhCd0kiLQow9/XXs3mjmte"], ["created_at", Wed, 27 Nov 2013 21:55:39 UTC +00:00], ["updated_at", Wed, 27 Nov 2013 21:55:39 UTC +00:00], ["id", 13], ["roles_mask", 8]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 13[0m  [["last_sign_in_at", Wed, 27 Nov 2013 21:55:39 UTC +00:00], ["current_sign_in_at", Wed, 27 Nov 2013 21:55:39 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 27 Nov 2013 21:55:39 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/logged_in_home
+Completed 302 Found in 83ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/logged_in_home" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+Processing by PagesController#logged_in_home as HTML
+  Rendered pages/logged_in_home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 13 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 16:55:39 -0500
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9rO31tD2LLGikxD4dHjajra7YNGrQ0Rj5+nWfrxyUbQ="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 13 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/logged_out_message
+Completed 302 Found in 19ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/logged_out_message" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+Processing by PagesController#logged_out_message as HTML
+  Rendered pages/logged_out_message.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:45 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-11-27 17:27:48 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-27 17:27:57 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"usARRcNQygbnUG/f6RTe49Ptqo2JvOR8qwJGBFSPOzU=", "user"=>{"username"=>"third", "email"=>"third@here.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'third@here.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 27 Nov 2013 22:27:57 UTC +00:00], ["email", "third@here.com"], ["encrypted_password", "$2a$10$ZrFCPgCbVyoZQqkUuz5ybu1cEMq6VmRcxoaRhgnXCxbyXCi.wLufq"], ["updated_at", Wed, 27 Nov 2013 22:27:57 UTC +00:00], ["username", "third"]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'third@here.com' AND "users"."id" != 14) LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "username" = ?, "email" = ?, "encrypted_password" = ?, "created_at" = ?, "updated_at" = ?, "id" = ?, "roles_mask" = ? WHERE "users"."id" = 14[0m  [["username", "third"], ["email", "third@here.com"], ["encrypted_password", "$2a$10$ZrFCPgCbVyoZQqkUuz5ybu1cEMq6VmRcxoaRhgnXCxbyXCi.wLufq"], ["created_at", Wed, 27 Nov 2013 22:27:57 UTC +00:00], ["updated_at", Wed, 27 Nov 2013 22:27:57 UTC +00:00], ["id", 14], ["roles_mask", 2]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 14  [["last_sign_in_at", Wed, 27 Nov 2013 22:27:57 UTC +00:00], ["current_sign_in_at", Wed, 27 Nov 2013 22:27:57 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 27 Nov 2013 22:27:57 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/logged_in_home
+Completed 302 Found in 83ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/logged_in_home" for 127.0.0.1 at 2013-11-27 17:27:57 -0500
+Processing by PagesController#logged_in_home as HTML
+  Rendered pages/logged_in_home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 14 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 17:27:58 -0500
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1[0m
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"usARRcNQygbnUG/f6RTe49Ptqo2JvOR8qwJGBFSPOzU="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 14 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/logged_out_message
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/logged_out_message" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+Processing by PagesController#logged_out_message as HTML
+  Rendered pages/logged_out_message.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:25 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-11-27 17:28:26 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G+Zei0wp2+MJMTLqVceA/JZtpxes/2aICElyL+NbZv4=", "user"=>{"username"=>"mart", "email"=>"hu@gli.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'hu@gli.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 27 Nov 2013 22:28:38 UTC +00:00], ["email", "hu@gli.com"], ["encrypted_password", "$2a$10$Y8P6cqo2.Ejb8JOUCxkEmuswYcKdBAUwO.dsaoMCfbYTbSyIug6Wq"], ["updated_at", Wed, 27 Nov 2013 22:28:38 UTC +00:00], ["username", "mart"]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."email" = 'hu@gli.com' AND "users"."id" != 15) LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "username" = ?, "email" = ?, "encrypted_password" = ?, "created_at" = ?, "updated_at" = ?, "id" = ?, "roles_mask" = ? WHERE "users"."id" = 15  [["username", "mart"], ["email", "hu@gli.com"], ["encrypted_password", "$2a$10$Y8P6cqo2.Ejb8JOUCxkEmuswYcKdBAUwO.dsaoMCfbYTbSyIug6Wq"], ["created_at", Wed, 27 Nov 2013 22:28:38 UTC +00:00], ["updated_at", Wed, 27 Nov 2013 22:28:38 UTC +00:00], ["id", 15], ["roles_mask", 2]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 15[0m  [["last_sign_in_at", Wed, 27 Nov 2013 22:28:38 UTC +00:00], ["current_sign_in_at", Wed, 27 Nov 2013 22:28:38 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 27 Nov 2013 22:28:38 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/logged_in_home
+Completed 302 Found in 79ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/logged_in_home" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+Processing by PagesController#logged_in_home as HTML
+  Rendered pages/logged_in_home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 15 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:38 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G+Zei0wp2+MJMTLqVceA/JZtpxes/2aICElyL+NbZv4="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 15 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/logged_out_message
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/logged_out_message" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+Processing by PagesController#logged_out_message as HTML
+  Rendered pages/logged_out_message.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-27 17:28:40 -0500
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 15]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 14]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 13]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 12]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
