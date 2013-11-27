@@ -98,4 +98,6 @@ Adding gem role_model --> default assign role to new users, but requires having 
 
 
 funky
+something else
+
 
