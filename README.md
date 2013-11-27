@@ -97,5 +97,5 @@ Adding gem role_model --> default assign role to new users, but requires having 
 	  end
 
 
-
+funky
 
