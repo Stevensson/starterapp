@@ -13,6 +13,8 @@ roles_attribute :roles_mask
 roles :admin, :user
 after_create :assign_default_role
 
+# send confimration email after registration
+after_create :send_welcome_email
 
 
 def self.find_first_by_auth_conditions(warden_conditions)
@@ -24,6 +26,13 @@ def self.find_first_by_auth_conditions(warden_conditions)
   end
 end
 
+# Send welcome email
+def send_welcome_email
+    RegistrationConfirmationMailer.confirm(self).deliver
+  end
+
+
+
 # private method defined to set default role of user upon account creation
 private
   def assign_default_role
@@ -32,6 +41,7 @@ private
   end
 
 
+  
 ### This is the correct method you override with the code above
 ### def self.find_for_database_authentication(warden_conditions)
 ### end 

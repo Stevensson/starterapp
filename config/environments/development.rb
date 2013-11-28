@@ -39,6 +39,9 @@ Martinho::Application.configure do
 config.action_mailer.perform_deliveries = true
 
 # Added during install of Devise gem
+# In development, config.action_mailer.default_url_options is set for a host 
+# at localhost:3000. If you are sending email with Devise, this will enable 
+# links in Devise confirmation email messages to work properly during development.
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
 
