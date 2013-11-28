@@ -34,6 +34,8 @@ end
 
 gem 'devise', '~> 3.1.0.rc2'
 
+gem 'figaro'
+
 gem 'paperclip'
 
 gem 'role_model'
