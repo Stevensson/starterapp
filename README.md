@@ -14,7 +14,15 @@ This is a starter app which consists of a number of installed gems with basic co
 * add username to devise
 * use email or username to sign in
 * user greeting by name
-* OPEN admin role (Need Role Model Gem, then either declarative authorization or CanCan)
+* send welcome email to user after registration  // Use gmail in config to do so.
+* admin role (Need Role Model Gem, then either declarative authorization or CanCan)
+* OPEN add items
+* OPEN add tags to items
+* OPEN a user can only see his own account and not other accounts. 
+* OPEN a user can only see his items
+
+
+* OPEN add pagination to items
 * OPEN display of error messages in footer for Admins
 * OPEN admin can create, update and delete users in admin dashboard
 * OPEN admin can create posts for users
@@ -22,11 +30,8 @@ This is a starter app which consists of a number of installed gems with basic co
 * OPEN admin can delete posts for users
 * OPEN tagging for posts
 * OPEN tag categories for posts
-* OPEN confirm account via email
 * OPEN redirect to page when auth filter and hit reg wall
-* OPEN send email
 * OPEN receive email
-* OPEN see only your posts, but not posts from others
 * OPEN add user pages, visible only to users and admins // alt: public
 * OPEN custom/intelligent headers
 
