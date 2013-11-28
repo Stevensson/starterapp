@@ -16442,3 +16442,877 @@ Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-28 09:24:19 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-28 09:24:19 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-11-28 09:32:43 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-28 09:32:54 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2P0/sGSsAjJvFaCFq93FAdnIzTKz8WFSlKTdczchAgM=", "user"=>{"username"=>"helper", "email"=>"martinhuegli+2asdassssssss@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'martinhuegli+2asdassssssss@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 28 Nov 2013 14:32:54 UTC +00:00], ["email", "martinhuegli+2asdassssssss@gmail.com"], ["encrypted_password", "$2a$10$Spx.j8SkYFNjQksBJS3OJOe8DLUhFqK2tJciLGaFWNTax7ptvi7pK"], ["updated_at", Thu, 28 Nov 2013 14:32:54 UTC +00:00], ["username", "helper"]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'martinhuegli+2asdassssssss@gmail.com' AND "users"."id" != 26) LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "username" = ?, "email" = ?, "encrypted_password" = ?, "created_at" = ?, "updated_at" = ?, "id" = ?, "roles_mask" = ? WHERE "users"."id" = 26[0m  [["username", "helper"], ["email", "martinhuegli+2asdassssssss@gmail.com"], ["encrypted_password", "$2a$10$Spx.j8SkYFNjQksBJS3OJOe8DLUhFqK2tJciLGaFWNTax7ptvi7pK"], ["created_at", Thu, 28 Nov 2013 14:32:54 UTC +00:00], ["updated_at", Thu, 28 Nov 2013 14:32:54 UTC +00:00], ["id", 26], ["roles_mask", 2]]
+ERROR: compiling _app_views_registration_confirmation_mailer_confirm_html_erb__3959918805235431620_70160010516680 RAISED /Users/martinho/code/starterapp/app/views/registration_confirmation_mailer/confirm.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/martinho/code/starterapp/app/views/registration_confirmation_mailer/confirm.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_registration_confirmation_mailer_confirm_html_erb__3959918805235431620_70160010516680(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "registration_confirmation_mailer/confirm";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Rock n roll, friend!</h1>
+     <p>
+       You found the right wave
+     </p>
+<p>
+<Thanks ';@output_buffer.append=( @user.username );@output_buffer.safe_append=' for signing up! %>
+
+
+</p> <p>
+      ';@output_buffer.append=( Your email is <%= @user.email );@output_buffer.safe_append='
+     </p>
+<p>
+Keep riding that wave my friend!
+</p> </body>
+</html>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `module_eval'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `compile'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:248:in `block in compile!'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `synchronize'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `compile!'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:142:in `block in render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:161:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:141:in `render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:755:in `block in collect_responses'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:769:in `each'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:769:in `each_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:751:in `collect_responses'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:691:in `mail'
+/Users/martinho/code/starterapp/app/mailers/registration_confirmation_mailer.rb:6:in `confirm'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__4200428544542543969__process_action__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:503:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:497:in `initialize'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:480:in `new'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:480:in `method_missing'
+/Users/martinho/code/starterapp/app/models/user.rb:31:in `send_welcome_email'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:379:in `_run__2383010011129494459__create__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/callbacks.rb:306:in `create_record'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/timestamp.rb:57:in `create_record'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/persistence.rb:477:in `create_or_update'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/callbacks.rb:302:in `block in create_or_update'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__2383010011129494459__save__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/callbacks.rb:302:in `create_or_update'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/persistence.rb:106:in `save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/validations.rb:51:in `save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/attribute_methods/dirty.rb:32:in `save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:270:in `block (2 levels) in save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:326:in `block in with_transaction_returning_status'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `block in transaction'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:210:in `within_new_transaction'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `transaction'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:209:in `transaction'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:323:in `with_transaction_returning_status'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:270:in `block in save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:281:in `rollback_active_record_state!'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:269:in `save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.1.2/app/controllers/devise/registrations_controller.rb:15:in `create'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:443:in `_run__3156847143646302138__process_action__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:231:in `block in action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/mapper.rb:44:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:35:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/query_cache.rb:36:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/migration.rb:369:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__1057559616262939276__call__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `block in call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/engine.rb:511:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/application.rb:97:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/martinho/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/martinho/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/martinho/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered registration_confirmation_mailer/confirm.html.erb (3.1ms)
+  [1m[35m (7.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 113ms
+
+ActionView::Template::Error (/Users/martinho/code/starterapp/app/views/registration_confirmation_mailer/confirm.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/martinho/code/starterapp/app/views/registration_confirmation_mailer/confirm.html.erb:25: syntax error, unexpected keyword_end, expecting ')'):
+    20: </p> </body>
+    21: </html>
+  app/mailers/registration_confirmation_mailer.rb:6:in `confirm'
+  app/models/user.rb:31:in `send_welcome_email'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-28 09:33:48 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2P0/sGSsAjJvFaCFq93FAdnIzTKz8WFSlKTdczchAgM=", "user"=>{"username"=>"helper", "email"=>"martinhuegli+2asdassssssss@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'martinhuegli+2asdassssssss@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 28 Nov 2013 14:33:48 UTC +00:00], ["email", "martinhuegli+2asdassssssss@gmail.com"], ["encrypted_password", "$2a$10$MsgAAhlmGECnMCfwM/Rvy.aB0ONPg/30APVosk2pazSfF9ifeqBYa"], ["updated_at", Thu, 28 Nov 2013 14:33:48 UTC +00:00], ["username", "helper"]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'martinhuegli+2asdassssssss@gmail.com' AND "users"."id" != 26) LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "username" = ?, "email" = ?, "encrypted_password" = ?, "created_at" = ?, "updated_at" = ?, "id" = ?, "roles_mask" = ? WHERE "users"."id" = 26[0m  [["username", "helper"], ["email", "martinhuegli+2asdassssssss@gmail.com"], ["encrypted_password", "$2a$10$MsgAAhlmGECnMCfwM/Rvy.aB0ONPg/30APVosk2pazSfF9ifeqBYa"], ["created_at", Thu, 28 Nov 2013 14:33:48 UTC +00:00], ["updated_at", Thu, 28 Nov 2013 14:33:48 UTC +00:00], ["id", 26], ["roles_mask", 2]]
+ERROR: compiling _app_views_registration_confirmation_mailer_confirm_html_erb__3959918805235431620_70160011727060 RAISED /Users/martinho/code/starterapp/app/views/registration_confirmation_mailer/confirm.html.erb:24: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/martinho/code/starterapp/app/views/registration_confirmation_mailer/confirm.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_registration_confirmation_mailer_confirm_html_erb__3959918805235431620_70160011727060(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "registration_confirmation_mailer/confirm";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Rock n roll, friend!</h1>
+     <p>
+       You found the right wave
+     </p>
+<p>
+
+Thanks ';@output_buffer.append=( @user.username );@output_buffer.safe_append=' for signing up! %>
+
+
+</p> <p>
+      ';@output_buffer.append=( Your email is <%= @user.email );@output_buffer.safe_append='
+     </p>
+<p>
+Keep riding that wave my friend!
+</p> </body>
+</html>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `module_eval'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:299:in `compile'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:248:in `block in compile!'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `synchronize'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:236:in `compile!'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:142:in `block in render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:161:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/template.rb:141:in `render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:755:in `block in collect_responses'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:769:in `each'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:769:in `each_template'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:751:in `collect_responses'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:691:in `mail'
+/Users/martinho/code/starterapp/app/mailers/registration_confirmation_mailer.rb:6:in `confirm'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__4200428544542543969__process_action__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:503:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:497:in `initialize'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:480:in `new'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionmailer-4.0.1/lib/action_mailer/base.rb:480:in `method_missing'
+/Users/martinho/code/starterapp/app/models/user.rb:31:in `send_welcome_email'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:379:in `_run__2383010011129494459__create__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/callbacks.rb:306:in `create_record'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/timestamp.rb:57:in `create_record'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/persistence.rb:477:in `create_or_update'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/callbacks.rb:302:in `block in create_or_update'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__2383010011129494459__save__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/callbacks.rb:302:in `create_or_update'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/persistence.rb:106:in `save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/validations.rb:51:in `save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/attribute_methods/dirty.rb:32:in `save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:270:in `block (2 levels) in save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:326:in `block in with_transaction_returning_status'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `block in transaction'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:210:in `within_new_transaction'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/database_statements.rb:202:in `transaction'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:209:in `transaction'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:323:in `with_transaction_returning_status'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:270:in `block in save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:281:in `rollback_active_record_state!'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/transactions.rb:269:in `save'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.1.2/app/controllers/devise/registrations_controller.rb:15:in `create'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:443:in `_run__3156847143646302138__process_action__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/base.rb:136:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_controller/metal.rb:231:in `block in action'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/mapper.rb:44:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:35:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/query_cache.rb:36:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.1/lib/active_record/migration.rb:369:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:373:in `_run__1057559616262939276__call__callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `block in call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/rack/logger.rb:20:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.1/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/engine.rb:511:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.1/lib/rails/application.rb:97:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/martinho/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/martinho/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/martinho/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered registration_confirmation_mailer/confirm.html.erb (3.4ms)
+  [1m[35m (7.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 107ms
+
+ActionView::Template::Error (/Users/martinho/code/starterapp/app/views/registration_confirmation_mailer/confirm.html.erb:24: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/martinho/code/starterapp/app/views/registration_confirmation_mailer/confirm.html.erb:26: syntax error, unexpected keyword_end, expecting ')'):
+    21: </p> </body>
+    22: </html>
+  app/mailers/registration_confirmation_mailer.rb:6:in `confirm'
+  app/models/user.rb:31:in `send_welcome_email'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-28 09:35:48 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2P0/sGSsAjJvFaCFq93FAdnIzTKz8WFSlKTdczchAgM=", "user"=>{"username"=>"helper", "email"=>"martinhuegli+2asdassssssss@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'martinhuegli+2asdassssssss@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 28 Nov 2013 14:35:48 UTC +00:00], ["email", "martinhuegli+2asdassssssss@gmail.com"], ["encrypted_password", "$2a$10$BVu.vncNTxgga8HhLsXoE.IuxHC0pk/D9x91gF6IKR3edEC13QpIC"], ["updated_at", Thu, 28 Nov 2013 14:35:48 UTC +00:00], ["username", "helper"]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'martinhuegli+2asdassssssss@gmail.com' AND "users"."id" != 26) LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "username" = ?, "email" = ?, "encrypted_password" = ?, "created_at" = ?, "updated_at" = ?, "id" = ?, "roles_mask" = ? WHERE "users"."id" = 26[0m  [["username", "helper"], ["email", "martinhuegli+2asdassssssss@gmail.com"], ["encrypted_password", "$2a$10$BVu.vncNTxgga8HhLsXoE.IuxHC0pk/D9x91gF6IKR3edEC13QpIC"], ["created_at", Thu, 28 Nov 2013 14:35:48 UTC +00:00], ["updated_at", Thu, 28 Nov 2013 14:35:48 UTC +00:00], ["id", 26], ["roles_mask", 2]]
+  Rendered registration_confirmation_mailer/confirm.html.erb (47.9ms)
+  [1m[35m (7.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 149ms
+
+ActionView::Template::Error (undefined method `is' for #<#<Class:0x007f9ecd022768>:0x007f9ecd4d11d8>):
+     7:      <h1>Rock n roll, friend!</h1>
+     8:      <p> You found the right wave </p>
+     9:       <p> Thanks <%= @user.username %> for signing up! %> </p> 
+    10:       <p> <%= Your email is @user.email %> </p>
+    11: </body>
+    12: </html>
+  app/views/registration_confirmation_mailer/confirm.html.erb:10:in `_app_views_registration_confirmation_mailer_confirm_html_erb__3959918805235431620_70160012971700'
+  app/mailers/registration_confirmation_mailer.rb:6:in `confirm'
+  app/models/user.rb:31:in `send_welcome_email'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-28 09:36:22 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2P0/sGSsAjJvFaCFq93FAdnIzTKz8WFSlKTdczchAgM=", "user"=>{"username"=>"helper", "email"=>"martinhuegli+2asdassssssss@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'martinhuegli+2asdassssssss@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 28 Nov 2013 14:36:22 UTC +00:00], ["email", "martinhuegli+2asdassssssss@gmail.com"], ["encrypted_password", "$2a$10$X4/VvlBvmcbW6I.P9WHeLuehIGL/ljQ.5yK1c1THeq2wnN6uZa0j2"], ["updated_at", Thu, 28 Nov 2013 14:36:22 UTC +00:00], ["username", "helper"]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."email" = 'martinhuegli+2asdassssssss@gmail.com' AND "users"."id" != 26) LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "username" = ?, "email" = ?, "encrypted_password" = ?, "created_at" = ?, "updated_at" = ?, "id" = ?, "roles_mask" = ? WHERE "users"."id" = 26[0m  [["username", "helper"], ["email", "martinhuegli+2asdassssssss@gmail.com"], ["encrypted_password", "$2a$10$X4/VvlBvmcbW6I.P9WHeLuehIGL/ljQ.5yK1c1THeq2wnN6uZa0j2"], ["created_at", Thu, 28 Nov 2013 14:36:22 UTC +00:00], ["updated_at", Thu, 28 Nov 2013 14:36:22 UTC +00:00], ["id", 26], ["roles_mask", 2]]
+  Rendered registration_confirmation_mailer/confirm.html.erb (0.4ms)
+  Rendered registration_confirmation_mailer/confirm.text.erb (0.5ms)
+
+Sent mail to martinhuegli+2asdassssssss@gmail.com (2661.2ms)
+Date: Thu, 28 Nov 2013 09:36:22 -0500
+From: me@examplemail.com
+To: martinhuegli+2asdassssssss@gmail.com
+Message-ID: <529754e6b5ef0_1c853fcf66369b90381bc@mhs-macbook-air.home.mail>
+Subject: Thanks for signing up!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_529754e6b4a83_1c853fcf66369b903808c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_529754e6b4a83_1c853fcf66369b903808c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks helper for signing up!
+
+Your email is martinhuegli+2asdassssssss@gmail.com.
+
+----==_mimepart_529754e6b4a83_1c853fcf66369b903808c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Rock n roll, friend!</h1>
+     <p> You found the right wave </p>
+      <p> Thanks helper for signing up! %> </p> 
+      <p> Your email is martinhuegli+2asdassssssss@gmail.com </p>
+</body>
+</html>
+
+----==_mimepart_529754e6b4a83_1c853fcf66369b903808c--
+
+  [1m[35m (8.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 26  [["last_sign_in_at", Thu, 28 Nov 2013 14:36:25 UTC +00:00], ["current_sign_in_at", Thu, 28 Nov 2013 14:36:25 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 28 Nov 2013 14:36:25 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/logged_in_home
+Completed 302 Found in 2780ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/logged_in_home" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+Processing by PagesController#logged_in_home as HTML
+  Rendered pages/logged_in_home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 26 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-28 09:36:25 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2P0/sGSsAjJvFaCFq93FAdnIzTKz8WFSlKTdczchAgM="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 26 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/logged_out_message
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/logged_out_message" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+Processing by PagesController#logged_out_message as HTML
+  Rendered pages/logged_out_message.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 53ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-28 09:37:43 -0500
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-11-28 09:37:44 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-11-28 09:37:58 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LwGq5QKy8W1/6j2BFkFxBxhfZ+N4dFe+3Nv2Pz/Hsms=", "user"=>{"username"=>"Rudiger", "email"=>"martinhuegli+22322@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'martinhuegli+22322@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 14:37:58 UTC +00:00], ["email", "martinhuegli+22322@gmail.com"], ["encrypted_password", "$2a$10$tFZ4WybBApgBZXW682MAbOum5BX.8ZhPXQVghgVZLKoGYhWihM.YG"], ["updated_at", Thu, 28 Nov 2013 14:37:58 UTC +00:00], ["username", "Rudiger"]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."email" = 'martinhuegli+22322@gmail.com' AND "users"."id" != 27) LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "username" = ?, "email" = ?, "encrypted_password" = ?, "created_at" = ?, "updated_at" = ?, "id" = ?, "roles_mask" = ? WHERE "users"."id" = 27  [["username", "Rudiger"], ["email", "martinhuegli+22322@gmail.com"], ["encrypted_password", "$2a$10$tFZ4WybBApgBZXW682MAbOum5BX.8ZhPXQVghgVZLKoGYhWihM.YG"], ["created_at", Thu, 28 Nov 2013 14:37:58 UTC +00:00], ["updated_at", Thu, 28 Nov 2013 14:37:58 UTC +00:00], ["id", 27], ["roles_mask", 2]]
+  Rendered registration_confirmation_mailer/confirm.html.erb (0.5ms)
+  Rendered registration_confirmation_mailer/confirm.text.erb (0.5ms)
+
+Sent mail to martinhuegli+22322@gmail.com (2722.7ms)
+Date: Thu, 28 Nov 2013 09:37:58 -0500
+From: me@examplemail.com
+To: martinhuegli+22322@gmail.com
+Message-ID: <5297554686765_1c853fcf661c486c38383@mhs-macbook-air.home.mail>
+Subject: Thanks for signing up!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5297554685547_1c853fcf661c486c3821a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5297554685547_1c853fcf661c486c3821a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks Rudiger for signing up!
+
+Your email is martinhuegli+22322@gmail.com.
+
+----==_mimepart_5297554685547_1c853fcf661c486c3821a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Rock n roll, friend!</h1>
+     <p> You found the right wave </p>
+      <p> Thanks <strong> Rudiger </strong> for signing up! </p> 
+      Your email is martinhuegli+22322@gmail.com 
+</body>
+</html>
+
+----==_mimepart_5297554685547_1c853fcf661c486c3821a--
+
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 27[0m  [["last_sign_in_at", Thu, 28 Nov 2013 14:38:01 UTC +00:00], ["current_sign_in_at", Thu, 28 Nov 2013 14:38:01 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 28 Nov 2013 14:38:01 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/logged_in_home
+Completed 302 Found in 2848ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/logged_in_home" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+Processing by PagesController#logged_in_home as HTML
+  Rendered pages/logged_in_home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 27 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:01 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LwGq5QKy8W1/6j2BFkFxBxhfZ+N4dFe+3Nv2Pz/Hsms="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 27 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/logged_out_message
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/logged_out_message" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+Processing by PagesController#logged_out_message as HTML
+  Rendered pages/logged_out_message.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-28 09:38:04 -0500
