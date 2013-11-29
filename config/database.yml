@@ -4,8 +4,8 @@ development:
   database: starterapp_dev
   pool: 5
   username: martinho
-  password:
-  template: template0
+  password: 
+  
 
 test:
   adapter: postgresql
@@ -14,4 +14,3 @@ test:
   pool: 5
   username: martinho
   password:
-  template: template0
