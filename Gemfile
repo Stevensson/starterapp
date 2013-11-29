@@ -4,7 +4,15 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -36,13 +44,9 @@ gem 'devise', '~> 3.1.0.rc2'
 
 gem 'figaro'
 
-gem 'paperclip'
-
 gem 'role_model'
 
 gem 'griddler'
-
-gem 'formtastic'
 
 gem 'will_paginate', '~> 3.0'
 
@@ -53,6 +57,7 @@ gem 'masonry-rails', '~> 0.2.0'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 gem 'acts-as-taggable-on'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
