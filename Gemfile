@@ -4,12 +4,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
-group :development, :test do
-	gem 'pg'
-end
+
+gem 'pg'
+
 
 group :production do
-	gem 'pg'
 	gem 'rails_12factor'
 end
 
@@ -36,7 +35,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
@@ -48,24 +46,7 @@ gem 'role_model'
 
 gem 'griddler'
 
-gem 'will_paginate', '~> 3.0'
-
-gem 'will_paginate-bootstrap'
-
-gem 'masonry-rails', '~> 0.2.0'
-
-gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+gem 'bootstrap-sass'
 
 gem 'acts-as-taggable-on'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
