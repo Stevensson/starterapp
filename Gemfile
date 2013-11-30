@@ -44,6 +44,8 @@ gem 'figaro'
 
 gem 'role_model'
 
+gem 'cancan'
+
 gem 'griddler'
 
 gem 'bootstrap-sass'
