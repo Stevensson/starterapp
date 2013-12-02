@@ -3,6 +3,8 @@ Martinho::Application.routes.draw do
   devise_for :users
   resources :posts
 
+ 
+  
   root "pages#home"
   get "about" => "pages#about"
   get "logged_in_home" => "pages#logged_in_home"
