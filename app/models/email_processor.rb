@@ -13,10 +13,10 @@ class EmailProcessor
   end
 
   private
-  attr_accessor :title
+  attr_accessor :email
 
   def create_post
-    Post.create(title: email.from, body: sanitized_body)
+    Post.create(title: email.from, body: email.body)
   end
 
   def sanitized_body

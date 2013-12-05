@@ -24367,3 +24367,1102 @@ NoMethodError (undefined method `split' for nil:NilClass):
   Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353@rails4/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
   Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353@rails4/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
   Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353@rails4/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:39:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (7.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 90ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /Users/martinho/code/starterapp/app/assets/images
+  /Users/martinho/code/starterapp/app/assets/javascripts
+  /Users/martinho/code/starterapp/app/assets/stylesheets
+  /Users/martinho/code/starterapp/vendor/assets/javascripts
+  /Users/martinho/code/starterapp/vendor/assets/stylesheets
+  /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/turbolinks-2.0.0/lib/assets/javascripts
+  /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/jquery-rails-3.0.4/vendor/assets/javascripts
+  /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  (in /Users/martinho/code/starterapp/app/assets/stylesheets/bootstrap_and_customization.css.scss:1)):
+    2: <html>
+    3: <head>
+    4:   <title>Martinho</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/bootstrap_and_customization.css.scss:1
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___96741062885198767_70183177285280'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:44:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (38.2ms)
+  Rendered layouts/_header.html.erb (9.7ms)
+Completed 200 OK in 3109ms (Views: 3088.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-12-05 07:44:40 -0500
+
+
+Started GET "/about" for 127.0.0.1 at 2013-12-05 07:44:44 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:44:45 -0500
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+RuntimeError (`attr_accessible` is extracted out of Rails into a gem. Please use new recommended protection model for params(strong_parameters) or add `protected_attributes` to your Gemfile to use old one.):
+  app/models/post.rb:2:in `<class:Post>'
+  app/models/post.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:44:45 -0500
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+RuntimeError (`attr_accessible` is extracted out of Rails into a gem. Please use new recommended protection model for params(strong_parameters) or add `protected_attributes` to your Gemfile to use old one.):
+  app/models/post.rb:2:in `<class:Post>'
+  app/models/post.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:45:15 -0500
+Processing by PostsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 57ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:45:15 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:16 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:45:18 -0500
+Processing by PostsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:45:18 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:45:19 -0500
+Processing by PostsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:45:19 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2013-12-05 07:45:20 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:45:21 -0500
+Processing by PostsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:45:21 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-05 07:45:25 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-12-05 07:45:49 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xkC9leIZV2i6jbJ8DOvdoJ2eaRZob0QYpo1nBHwlbAc=", "user"=>{"username"=>"tester22222", "email"=>"tester2222@29388.cm", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mUser Exists (7.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'tester2222@29388.cm' LIMIT 1[0m
+  [1m[35mSQL (33.1ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at", "username") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 05 Dec 2013 12:45:49 UTC +00:00], ["email", "tester2222@29388.cm"], ["encrypted_password", "$2a$10$KDmMCx4W/Hs2cNsGKRx4cuB/QpnK5OaHbweeHHoeZLwtXOiFGDtUe"], ["updated_at", Thu, 05 Dec 2013 12:45:49 UTC +00:00], ["username", "tester22222"]]
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."email" = 'tester2222@29388.cm' AND "users"."id" != 6) LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  UPDATE "users" SET "username" = $1, "email" = $2, "encrypted_password" = $3, "created_at" = $4, "updated_at" = $5, "id" = $6, "roles_mask" = $7 WHERE "users"."id" = 6  [["username", "tester22222"], ["email", "tester2222@29388.cm"], ["encrypted_password", "$2a$10$KDmMCx4W/Hs2cNsGKRx4cuB/QpnK5OaHbweeHHoeZLwtXOiFGDtUe"], ["created_at", Thu, 05 Dec 2013 12:45:49 UTC +00:00], ["updated_at", Thu, 05 Dec 2013 12:45:49 UTC +00:00], ["id", 6], ["roles_mask", 2]]
+  Rendered registration_confirmation_mailer/confirm.html.erb (0.6ms)
+  Rendered registration_confirmation_mailer/confirm.text.erb (0.4ms)
+
+Sent mail to tester2222@29388.cm (7128.8ms)
+Date: Thu, 05 Dec 2013 07:45:49 -0500
+From: me@examplemail.com
+To: tester2222@29388.cm
+Message-ID: <52a0757d9f31f_ab0b3fca17e573bc237a6@mhs-macbook-air.home.mail>
+Subject: Thanks for signing up!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_52a0757d9caf3_ab0b3fca17e573bc23647";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_52a0757d9caf3_ab0b3fca17e573bc23647
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks tester22222 for signing up!
+
+Your email is tester2222@29388.cm.
+
+----==_mimepart_52a0757d9caf3_ab0b3fca17e573bc23647
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>Rock n roll, friend!</h1>
+     <p> You found the right wave </p>
+      <p> Thanks <strong> tester22222 </strong> for signing up! </p> 
+      Your email is tester2222@29388.cm 
+</body>
+</html>
+
+----==_mimepart_52a0757d9caf3_ab0b3fca17e573bc23647--
+
+  [1m[36m (107.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 6[0m  [["last_sign_in_at", Thu, 05 Dec 2013 12:45:56 UTC +00:00], ["current_sign_in_at", Thu, 05 Dec 2013 12:45:56 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 05 Dec 2013 12:45:56 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/logged_in_home
+Completed 302 Found in 7496ms (ActiveRecord: 152.5ms)
+
+
+Started GET "/logged_in_home" for 127.0.0.1 at 2013-12-05 07:45:56 -0500
+Processing by PagesController#logged_in_home as HTML
+  Rendered pages/logged_in_home.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.3ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-05 07:45:56 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-12-05 07:45:56 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:56 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-05 07:45:57 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:46:12 -0500
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (21.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 33.1ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2013-12-05 07:46:14 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 10.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2013-12-05 07:46:15 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:46:15 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:46:39 -0500
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-12-05 07:46:52 -0500
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:46:52 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-12-05 07:46:55 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xkC9leIZV2i6jbJ8DOvdoJ2eaRZob0QYpo1nBHwlbAc="}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/logged_out_message
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/logged_out_message" for 127.0.0.1 at 2013-12-05 07:46:55 -0500
+Processing by PagesController#logged_out_message as HTML
+  Rendered pages/logged_out_message.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-05 07:46:56 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-12-05 07:46:57 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N9VZ7ZjtVAvBMLIhCmlNwmn3bRDmk4AqM8jbHjR6xfI=", "user"=>{"login"=>"martinho", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE (lower(username) = 'martinho' OR lower(email) = 'martinho') ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 1  [["last_sign_in_at", Fri, 29 Nov 2013 20:48:59 UTC +00:00], ["current_sign_in_at", Thu, 05 Dec 2013 12:47:02 UTC +00:00], ["sign_in_count", 6], ["updated_at", Thu, 05 Dec 2013 12:47:02 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/logged_in_home
+Completed 302 Found in 93ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/logged_in_home" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+Processing by PagesController#logged_in_home as HTML
+  Rendered pages/logged_in_home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:02 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-12-05 07:47:06 -0500
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-12-05 07:47:08 -0500
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered posts/_form.html.erb (6.7ms)
+  Rendered posts/new.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 29.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AtIxv0D7h1bmEaBirXioRT765RJrdDmpY6/uQvkJHb0=", "post"=>{"title"=>"sample", "body"=>"post\r\n"}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "posts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 05 Dec 2013 12:47:19 UTC +00:00], ["updated_at", Thu, 05 Dec 2013 12:47:19 UTC +00:00]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 21ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "7"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jumbotron.css?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-05 07:47:19 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-05 07:47:21 -0500
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2013-12-05 07:47:22 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started HEAD "/email_processor" for 127.0.0.1 at 2013-12-05 07:48:18 -0500
+
+ActionController::RoutingError (No route matches [HEAD] "/email_processor"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.4ms)
+
+
+Started POST "/email_processor" for 127.0.0.1 at 2013-12-05 07:48:18 -0500
+Processing by Griddler::EmailsController#create as */*
+  Parameters: {"mandrill_events"=>"[]"}
+Completed 500 Internal Server Error in 52ms
+
+NoMethodError (undefined method `split' for nil:NilClass):
+  griddler (0.6.1) lib/griddler/adapters/sendgrid_adapter.rb:25:in `recipients'
+  griddler (0.6.1) lib/griddler/adapters/sendgrid_adapter.rb:15:in `normalize_params'
+  griddler (0.6.1) lib/griddler/adapters/sendgrid_adapter.rb:10:in `normalize_params'
+  griddler (0.6.1) app/controllers/griddler/emails_controller.rb:12:in `normalized_params'
+  griddler (0.6.1) app/controllers/griddler/emails_controller.rb:3:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:393:in `_run__864674697810226260__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__983220233691217662__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started GET "/email_processor" for 127.0.0.1 at 2013-12-05 07:48:32 -0500
+
+ActionController::RoutingError (No route matches [GET] "/email_processor"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.5ms)
+
+
+Started GET "/email_processor" for 127.0.0.1 at 2013-12-05 07:49:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/email_processor"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.7ms)
+
+
+Started GET "/email_processor" for 127.0.0.1 at 2013-12-05 07:50:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/email_processor"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.7ms)
+
+
+Started HEAD "/email_processor" for 127.0.0.1 at 2013-12-05 07:51:26 -0500
+
+
+Started POST "/email_processor" for 127.0.0.1 at 2013-12-05 07:51:39 -0500
+Processing by Griddler::EmailsController#create as */*
+  Parameters: {"mandrill_events"=>"[{\"event\":\"inbound\",\"msg\":{\"dkim\":{\"signed\":true,\"valid\":true},\"email\":\"inbound1@expatnyc.com\",\"from_email\":\"example.sender@mandrillapp.com\",\"headers\":{\"Content-Type\":\"multipart\\/alternative; boundary=\\\"_av-7r7zDhHxVEAo2yMWasfuFw\\\"\",\"Date\":\"Fri, 10 May 2013 19:28:20 +0000\",\"Dkim-Signature\":[\"v=1; a=rsa-sha1; c=relaxed\\/relaxed; s=mandrill; d=mail115.us4.mandrillapp.com; h=From:Sender:Subject:List-Unsubscribe:To:Message-Id:Date:MIME-Version:Content-Type; i=example.sender@mail115.us4.mandrillapp.com; bh=d60x72jf42gLILD7IiqBL0OBb40=; b=iJd7eBugdIjzqW84UZ2xynlg1SojANJR6xfz0JDD44h78EpbqJiYVcMIfRG7mkrn741Bd5YaMR6p 9j41OA9A5am+8BE1Ng2kLRGwou5hRInn+xXBAQm2NUt5FkoXSpvm4gC4gQSOxPbQcuzlLha9JqxJ 8ZZ89\\/20txUrRq9cYxk=\",\"v=1; a=rsa-sha256; c=relaxed\\/relaxed; d=c.mandrillapp.com; i=@c.mandrillapp.com; q=dns\\/txt; s=mandrill; t=1368214100; h=From : Sender : Subject : List-Unsubscribe : To : Message-Id : Date : MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User : List-Unsubscribe; bh=y5Vz+RDcKZmWzRc9s0xUJR6k4APvBNktBqy1EhSWM8o=; b=PLAUIuw8zk8kG5tPkmcnSanElxt6I5lp5t32nSvzVQE7R8u0AmIEjeIDZEt31+Q9PWt+nY sHHRsXUQ9SZpndT9Bk++\\/SmyA2ntU\\/2AKuqDpPkMZiTqxmGF80Wz4JJgx2aCEB1LeLVmFFwB 5Nr\\/LBSlsBlRcjT9QiWw0\\/iRvCn74=\"],\"Domainkey-Signature\":\"a=rsa-sha1; c=nofws; q=dns; s=mandrill; d=mail115.us4.mandrillapp.com; b=X6qudHd4oOJvVQZcoAEUCJgB875SwzEO5UKf6NvpfqyCVjdaO79WdDulLlfNVELeuoK2m6alt2yw 5Qhp4TW5NegyFf6Ogr\\/Hy0Lt411r\\/0lRf0nyaVkqMM\\/9g13B6D9CS092v70wshX8+qdyxK8fADw8 kEelbCK2cEl0AGIeAeo=;\",\"From\":\"<example.sender@mandrillapp.com>\",\"List-Unsubscribe\":\"<mailto:unsubscribe-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mailin1.us2.mcsv.net?subject=unsub>\",\"Message-Id\":\"<999.20130510192820.aaaaaaaaaaaaaa.aaaaaaaa@mail115.us4.mandrillapp.com>\",\"Mime-Version\":\"1.0\",\"Received\":[\"from mail115.us4.mandrillapp.com (mail115.us4.mandrillapp.com [205.201.136.115]) by mail.example.com (Postfix) with ESMTP id AAAAAAAAAAA for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:21 +0000 (UTC)\",\"from localhost (127.0.0.1) by mail115.us4.mandrillapp.com id hhl55a14i282 for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (envelope-from <bounce-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mail115.us4.mandrillapp.com>)\"],\"Sender\":\"<example.sender@mail115.us4.mandrillapp.com>\",\"Subject\":\"This is an example webhook message\",\"To\":\"<inbound1@expatnyc.com>\",\"X-Report-Abuse\":\"Please forward a copy of this message, including all headers, to abuse@mandrill.com\"},\"html\":\"<p>This is an example inbound message.<\\/p><img src=\\\"http:\\/\\/mandrillapp.com\\/track\\/open.php?u=999&id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tags=_all,_sendexample.sender@mandrillapp.com\\\" height=\\\"1\\\" width=\\\"1\\\">\\n\",\"raw_msg\":\"Received: from mail115.us4.mandrillapp.com (mail115.us4.mandrillapp.com [205.201.136.115])\\n\\tby mail.example.com (Postfix) with ESMTP id AAAAAAAAAAA\\n\\tfor <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (UTC)\\nDKIM-Signature: v=1; a=rsa-sha1; c=relaxed\\/relaxed; s=mandrill; d=mail115.us4.mandrillapp.com;\\n h=From:Sender:Subject:List-Unsubscribe:To:Message-Id:Date:MIME-Version:Content-Type; i=example.sender@mail115.us4.mandrillapp.com;\\n bh=d60x72jf42gLILD7IiqBL0OBb40=;\\n b=iJd7eBugdIjzqW84UZ2xynlg1SojANJR6xfz0JDD44h78EpbqJiYVcMIfRG7mkrn741Bd5YaMR6p\\n 9j41OA9A5am+8BE1Ng2kLRGwou5hRInn+xXBAQm2NUt5FkoXSpvm4gC4gQSOxPbQcuzlLha9JqxJ\\n 8ZZ89\\/20txUrRq9cYxk=\\nDomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mandrill; d=mail115.us4.mandrillapp.com;\\n b=X6qudHd4oOJvVQZcoAEUCJgB875SwzEO5UKf6NvpfqyCVjdaO79WdDulLlfNVELeuoK2m6alt2yw\\n 5Qhp4TW5NegyFf6Ogr\\/Hy0Lt411r\\/0lRf0nyaVkqMM\\/9g13B6D9CS092v70wshX8+qdyxK8fADw8\\n kEelbCK2cEl0AGIeAeo=;\\nReceived: from localhost (127.0.0.1) by mail115.us4.mandrillapp.com id hhl55a14i282 for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (envelope-from <bounce-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mail115.us4.mandrillapp.com>)\\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed\\/relaxed; d=c.mandrillapp.com; \\n i=@c.mandrillapp.com; q=dns\\/txt; s=mandrill; t=1368214100; h=From : \\n Sender : Subject : List-Unsubscribe : To : Message-Id : Date : \\n MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User : \\n List-Unsubscribe; bh=y5Vz+RDcKZmWzRc9s0xUJR6k4APvBNktBqy1EhSWM8o=; \\n b=PLAUIuw8zk8kG5tPkmcnSanElxt6I5lp5t32nSvzVQE7R8u0AmIEjeIDZEt31+Q9PWt+nY\\n sHHRsXUQ9SZpndT9Bk++\\/SmyA2ntU\\/2AKuqDpPkMZiTqxmGF80Wz4JJgx2aCEB1LeLVmFFwB\\n 5Nr\\/LBSlsBlRcjT9QiWw0\\/iRvCn74=\\nFrom: <example.sender@mandrillapp.com>\\nSender: <example.sender@mail115.us4.mandrillapp.com>\\nSubject: This is an example webhook message\\nList-Unsubscribe: <mailto:unsubscribe-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mailin1.us2.mcsv.net?subject=unsub>\\nTo: <inbound1@expatnyc.com>\\nX-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com\\nX-Mandrill-User: md_999\\nMessage-Id: <999.20130510192820.aaaaaaaaaaaaaa.aaaaaaaa@mail115.us4.mandrillapp.com>\\nDate: Fri, 10 May 2013 19:28:20 +0000\\nMIME-Version: 1.0\\nContent-Type: multipart\\/alternative; boundary=\\\"_av-7r7zDhHxVEAo2yMWasfuFw\\\"\\n\\n--_av-7r7zDhHxVEAo2yMWasfuFw\\nContent-Type: text\\/plain; charset=utf-8\\nContent-Transfer-Encoding: 7bit\\n\\nThis is an example inbound message.\\n--_av-7r7zDhHxVEAo2yMWasfuFw\\nContent-Type: text\\/html; charset=utf-8\\nContent-Transfer-Encoding: 7bit\\n\\n<p>This is an example inbound message.<\\/p><img src=\\\"http:\\/\\/mandrillapp.com\\/track\\/open.php?u=999&id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tags=_all,_sendexample.sender@mandrillapp.com\\\" height=\\\"1\\\" width=\\\"1\\\">\\n--_av-7r7zDhHxVEAo2yMWasfuFw--\",\"sender\":null,\"spam_report\":{\"matched_rules\":[{\"description\":\"RBL: Sender listed at http:\\/\\/www.dnswl.org\\/, no\",\"name\":\"RCVD_IN_DNSWL_NONE\",\"score\":0},{\"description\":null,\"name\":null,\"score\":0},{\"description\":\"in iadb.isipp.com]\",\"name\":\"listed\",\"score\":0},{\"description\":\"RBL: Participates in the IADB system\",\"name\":\"RCVD_IN_IADB_LISTED\",\"score\":-0.4},{\"description\":\"RBL: ISIPP IADB lists as vouched-for sender\",\"name\":\"RCVD_IN_IADB_VOUCHED\",\"score\":-2.2},{\"description\":\"RBL: IADB: Sender publishes SPF record\",\"name\":\"RCVD_IN_IADB_SPF\",\"score\":0},{\"description\":\"RBL: IADB: Sender publishes Sender ID record\",\"name\":\"RCVD_IN_IADB_SENDERID\",\"score\":0},{\"description\":\"RBL: IADB: Sender publishes Domain Keys record\",\"name\":\"RCVD_IN_IADB_DK\",\"score\":-0.2},{\"description\":\"RBL: IADB: Sender has reverse DNS record\",\"name\":\"RCVD_IN_IADB_RDNS\",\"score\":-0.2},{\"description\":\"SPF: HELO matches SPF record\",\"name\":\"SPF_HELO_PASS\",\"score\":0},{\"description\":\"BODY: HTML included in message\",\"name\":\"HTML_MESSAGE\",\"score\":0},{\"description\":\"BODY: HTML: images with 0-400 bytes of words\",\"name\":\"HTML_IMAGE_ONLY_04\",\"score\":0.3},{\"description\":\"Message has a DKIM or DK signature, not necessarily valid\",\"name\":\"DKIM_SIGNED\",\"score\":0.1},{\"description\":\"Message has at least one valid DKIM or DK signature\",\"name\":\"DKIM_VALID\",\"score\":-0.1}],\"score\":-2.6},\"spf\":{\"detail\":\"sender SPF authorized\",\"result\":\"pass\"},\"subject\":\"This is an example webhook message\",\"tags\":[],\"template\":null,\"text\":\"This is an example inbound message.\\n\",\"text_flowed\":false,\"to\":[[\"inbound1@expatnyc.com\",null]]},\"ts\":1368214102},{\"event\":\"inbound\",\"msg\":{\"dkim\":{\"signed\":true,\"valid\":true},\"email\":\"inbound1@expatnyc.com\",\"from_email\":\"example.sender@mandrillapp.com\",\"headers\":{\"Content-Type\":\"multipart\\/alternative; boundary=\\\"_av-7r7zDhHxVEAo2yMWasfuFw\\\"\",\"Date\":\"Fri, 10 May 2013 19:28:20 +0000\",\"Dkim-Signature\":[\"v=1; a=rsa-sha1; c=relaxed\\/relaxed; s=mandrill; d=mail115.us4.mandrillapp.com; h=From:Sender:Subject:List-Unsubscribe:To:Message-Id:Date:MIME-Version:Content-Type; i=example.sender@mail115.us4.mandrillapp.com; bh=d60x72jf42gLILD7IiqBL0OBb40=; b=iJd7eBugdIjzqW84UZ2xynlg1SojANJR6xfz0JDD44h78EpbqJiYVcMIfRG7mkrn741Bd5YaMR6p 9j41OA9A5am+8BE1Ng2kLRGwou5hRInn+xXBAQm2NUt5FkoXSpvm4gC4gQSOxPbQcuzlLha9JqxJ 8ZZ89\\/20txUrRq9cYxk=\",\"v=1; a=rsa-sha256; c=relaxed\\/relaxed; d=c.mandrillapp.com; i=@c.mandrillapp.com; q=dns\\/txt; s=mandrill; t=1368214100; h=From : Sender : Subject : List-Unsubscribe : To : Message-Id : Date : MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User : List-Unsubscribe; bh=y5Vz+RDcKZmWzRc9s0xUJR6k4APvBNktBqy1EhSWM8o=; b=PLAUIuw8zk8kG5tPkmcnSanElxt6I5lp5t32nSvzVQE7R8u0AmIEjeIDZEt31+Q9PWt+nY sHHRsXUQ9SZpndT9Bk++\\/SmyA2ntU\\/2AKuqDpPkMZiTqxmGF80Wz4JJgx2aCEB1LeLVmFFwB 5Nr\\/LBSlsBlRcjT9QiWw0\\/iRvCn74=\"],\"Domainkey-Signature\":\"a=rsa-sha1; c=nofws; q=dns; s=mandrill; d=mail115.us4.mandrillapp.com; b=X6qudHd4oOJvVQZcoAEUCJgB875SwzEO5UKf6NvpfqyCVjdaO79WdDulLlfNVELeuoK2m6alt2yw 5Qhp4TW5NegyFf6Ogr\\/Hy0Lt411r\\/0lRf0nyaVkqMM\\/9g13B6D9CS092v70wshX8+qdyxK8fADw8 kEelbCK2cEl0AGIeAeo=;\",\"From\":\"<example.sender@mandrillapp.com>\",\"List-Unsubscribe\":\"<mailto:unsubscribe-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mailin1.us2.mcsv.net?subject=unsub>\",\"Message-Id\":\"<999.20130510192820.aaaaaaaaaaaaaa.aaaaaaaa@mail115.us4.mandrillapp.com>\",\"Mime-Version\":\"1.0\",\"Received\":[\"from mail115.us4.mandrillapp.com (mail115.us4.mandrillapp.com [205.201.136.115]) by mail.example.com (Postfix) with ESMTP id AAAAAAAAAAA for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:21 +0000 (UTC)\",\"from localhost (127.0.0.1) by mail115.us4.mandrillapp.com id hhl55a14i282 for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (envelope-from <bounce-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mail115.us4.mandrillapp.com>)\"],\"Sender\":\"<example.sender@mail115.us4.mandrillapp.com>\",\"Subject\":\"This is an example webhook message\",\"To\":\"<inbound1@expatnyc.com>\",\"X-Report-Abuse\":\"Please forward a copy of this message, including all headers, to abuse@mandrill.com\"},\"html\":\"<p>This is an example inbound message.<\\/p><img src=\\\"http:\\/\\/mandrillapp.com\\/track\\/open.php?u=999&id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tags=_all,_sendexample.sender@mandrillapp.com\\\" height=\\\"1\\\" width=\\\"1\\\">\\n\",\"raw_msg\":\"Received: from mail115.us4.mandrillapp.com (mail115.us4.mandrillapp.com [205.201.136.115])\\n\\tby mail.example.com (Postfix) with ESMTP id AAAAAAAAAAA\\n\\tfor <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (UTC)\\nDKIM-Signature: v=1; a=rsa-sha1; c=relaxed\\/relaxed; s=mandrill; d=mail115.us4.mandrillapp.com;\\n h=From:Sender:Subject:List-Unsubscribe:To:Message-Id:Date:MIME-Version:Content-Type; i=example.sender@mail115.us4.mandrillapp.com;\\n bh=d60x72jf42gLILD7IiqBL0OBb40=;\\n b=iJd7eBugdIjzqW84UZ2xynlg1SojANJR6xfz0JDD44h78EpbqJiYVcMIfRG7mkrn741Bd5YaMR6p\\n 9j41OA9A5am+8BE1Ng2kLRGwou5hRInn+xXBAQm2NUt5FkoXSpvm4gC4gQSOxPbQcuzlLha9JqxJ\\n 8ZZ89\\/20txUrRq9cYxk=\\nDomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mandrill; d=mail115.us4.mandrillapp.com;\\n b=X6qudHd4oOJvVQZcoAEUCJgB875SwzEO5UKf6NvpfqyCVjdaO79WdDulLlfNVELeuoK2m6alt2yw\\n 5Qhp4TW5NegyFf6Ogr\\/Hy0Lt411r\\/0lRf0nyaVkqMM\\/9g13B6D9CS092v70wshX8+qdyxK8fADw8\\n kEelbCK2cEl0AGIeAeo=;\\nReceived: from localhost (127.0.0.1) by mail115.us4.mandrillapp.com id hhl55a14i282 for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (envelope-from <bounce-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mail115.us4.mandrillapp.com>)\\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed\\/relaxed; d=c.mandrillapp.com; \\n i=@c.mandrillapp.com; q=dns\\/txt; s=mandrill; t=1368214100; h=From : \\n Sender : Subject : List-Unsubscribe : To : Message-Id : Date : \\n MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User : \\n List-Unsubscribe; bh=y5Vz+RDcKZmWzRc9s0xUJR6k4APvBNktBqy1EhSWM8o=; \\n b=PLAUIuw8zk8kG5tPkmcnSanElxt6I5lp5t32nSvzVQE7R8u0AmIEjeIDZEt31+Q9PWt+nY\\n sHHRsXUQ9SZpndT9Bk++\\/SmyA2ntU\\/2AKuqDpPkMZiTqxmGF80Wz4JJgx2aCEB1LeLVmFFwB\\n 5Nr\\/LBSlsBlRcjT9QiWw0\\/iRvCn74=\\nFrom: <example.sender@mandrillapp.com>\\nSender: <example.sender@mail115.us4.mandrillapp.com>\\nSubject: This is an example webhook message\\nList-Unsubscribe: <mailto:unsubscribe-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mailin1.us2.mcsv.net?subject=unsub>\\nTo: <inbound1@expatnyc.com>\\nX-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com\\nX-Mandrill-User: md_999\\nMessage-Id: <999.20130510192820.aaaaaaaaaaaaaa.aaaaaaaa@mail115.us4.mandrillapp.com>\\nDate: Fri, 10 May 2013 19:28:20 +0000\\nMIME-Version: 1.0\\nContent-Type: multipart\\/alternative; boundary=\\\"_av-7r7zDhHxVEAo2yMWasfuFw\\\"\\n\\n--_av-7r7zDhHxVEAo2yMWasfuFw\\nContent-Type: text\\/plain; charset=utf-8\\nContent-Transfer-Encoding: 7bit\\n\\nThis is an example inbound message.\\n--_av-7r7zDhHxVEAo2yMWasfuFw\\nContent-Type: text\\/html; charset=utf-8\\nContent-Transfer-Encoding: 7bit\\n\\n<p>This is an example inbound message.<\\/p><img src=\\\"http:\\/\\/mandrillapp.com\\/track\\/open.php?u=999&id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tags=_all,_sendexample.sender@mandrillapp.com\\\" height=\\\"1\\\" width=\\\"1\\\">\\n--_av-7r7zDhHxVEAo2yMWasfuFw--\",\"sender\":null,\"spam_report\":{\"matched_rules\":[{\"description\":\"RBL: Sender listed at http:\\/\\/www.dnswl.org\\/, no\",\"name\":\"RCVD_IN_DNSWL_NONE\",\"score\":0},{\"description\":null,\"name\":null,\"score\":0},{\"description\":\"in iadb.isipp.com]\",\"name\":\"listed\",\"score\":0},{\"description\":\"RBL: Participates in the IADB system\",\"name\":\"RCVD_IN_IADB_LISTED\",\"score\":-0.4},{\"description\":\"RBL: ISIPP IADB lists as vouched-for sender\",\"name\":\"RCVD_IN_IADB_VOUCHED\",\"score\":-2.2},{\"description\":\"RBL: IADB: Sender publishes SPF record\",\"name\":\"RCVD_IN_IADB_SPF\",\"score\":0},{\"description\":\"RBL: IADB: Sender publishes Sender ID record\",\"name\":\"RCVD_IN_IADB_SENDERID\",\"score\":0},{\"description\":\"RBL: IADB: Sender publishes Domain Keys record\",\"name\":\"RCVD_IN_IADB_DK\",\"score\":-0.2},{\"description\":\"RBL: IADB: Sender has reverse DNS record\",\"name\":\"RCVD_IN_IADB_RDNS\",\"score\":-0.2},{\"description\":\"SPF: HELO matches SPF record\",\"name\":\"SPF_HELO_PASS\",\"score\":0},{\"description\":\"BODY: HTML included in message\",\"name\":\"HTML_MESSAGE\",\"score\":0},{\"description\":\"BODY: HTML: images with 0-400 bytes of words\",\"name\":\"HTML_IMAGE_ONLY_04\",\"score\":0.3},{\"description\":\"Message has a DKIM or DK signature, not necessarily valid\",\"name\":\"DKIM_SIGNED\",\"score\":0.1},{\"description\":\"Message has at least one valid DKIM or DK signature\",\"name\":\"DKIM_VALID\",\"score\":-0.1}],\"score\":-2.6},\"spf\":{\"detail\":\"sender SPF authorized\",\"result\":\"pass\"},\"subject\":\"This is an example webhook message\",\"tags\":[],\"template\":null,\"text\":\"This is an example inbound message.\\n\",\"text_flowed\":false,\"to\":[[\"inbound1@expatnyc.com\",null]]},\"ts\":1368214102}]"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `split' for nil:NilClass):
+  griddler (0.6.1) lib/griddler/adapters/sendgrid_adapter.rb:25:in `recipients'
+  griddler (0.6.1) lib/griddler/adapters/sendgrid_adapter.rb:15:in `normalize_params'
+  griddler (0.6.1) lib/griddler/adapters/sendgrid_adapter.rb:10:in `normalize_params'
+  griddler (0.6.1) app/controllers/griddler/emails_controller.rb:12:in `normalized_params'
+  griddler (0.6.1) app/controllers/griddler/emails_controller.rb:3:in `create'
+  actionpack (4.0.1) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:393:in `_run__864674697810226260__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__983220233691217662__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/martinho/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/martinho/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started POST "/email_processor" for 127.0.0.1 at 2013-12-05 07:52:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Griddler::EmailsController#create as */*
+  Parameters: {"mandrill_events"=>"[{\"event\":\"inbound\",\"msg\":{\"dkim\":{\"signed\":true,\"valid\":true},\"email\":\"inbound1@expatnyc.com\",\"from_email\":\"example.sender@mandrillapp.com\",\"headers\":{\"Content-Type\":\"multipart\\/alternative; boundary=\\\"_av-7r7zDhHxVEAo2yMWasfuFw\\\"\",\"Date\":\"Fri, 10 May 2013 19:28:20 +0000\",\"Dkim-Signature\":[\"v=1; a=rsa-sha1; c=relaxed\\/relaxed; s=mandrill; d=mail115.us4.mandrillapp.com; h=From:Sender:Subject:List-Unsubscribe:To:Message-Id:Date:MIME-Version:Content-Type; i=example.sender@mail115.us4.mandrillapp.com; bh=d60x72jf42gLILD7IiqBL0OBb40=; b=iJd7eBugdIjzqW84UZ2xynlg1SojANJR6xfz0JDD44h78EpbqJiYVcMIfRG7mkrn741Bd5YaMR6p 9j41OA9A5am+8BE1Ng2kLRGwou5hRInn+xXBAQm2NUt5FkoXSpvm4gC4gQSOxPbQcuzlLha9JqxJ 8ZZ89\\/20txUrRq9cYxk=\",\"v=1; a=rsa-sha256; c=relaxed\\/relaxed; d=c.mandrillapp.com; i=@c.mandrillapp.com; q=dns\\/txt; s=mandrill; t=1368214100; h=From : Sender : Subject : List-Unsubscribe : To : Message-Id : Date : MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User : List-Unsubscribe; bh=y5Vz+RDcKZmWzRc9s0xUJR6k4APvBNktBqy1EhSWM8o=; b=PLAUIuw8zk8kG5tPkmcnSanElxt6I5lp5t32nSvzVQE7R8u0AmIEjeIDZEt31+Q9PWt+nY sHHRsXUQ9SZpndT9Bk++\\/SmyA2ntU\\/2AKuqDpPkMZiTqxmGF80Wz4JJgx2aCEB1LeLVmFFwB 5Nr\\/LBSlsBlRcjT9QiWw0\\/iRvCn74=\"],\"Domainkey-Signature\":\"a=rsa-sha1; c=nofws; q=dns; s=mandrill; d=mail115.us4.mandrillapp.com; b=X6qudHd4oOJvVQZcoAEUCJgB875SwzEO5UKf6NvpfqyCVjdaO79WdDulLlfNVELeuoK2m6alt2yw 5Qhp4TW5NegyFf6Ogr\\/Hy0Lt411r\\/0lRf0nyaVkqMM\\/9g13B6D9CS092v70wshX8+qdyxK8fADw8 kEelbCK2cEl0AGIeAeo=;\",\"From\":\"<example.sender@mandrillapp.com>\",\"List-Unsubscribe\":\"<mailto:unsubscribe-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mailin1.us2.mcsv.net?subject=unsub>\",\"Message-Id\":\"<999.20130510192820.aaaaaaaaaaaaaa.aaaaaaaa@mail115.us4.mandrillapp.com>\",\"Mime-Version\":\"1.0\",\"Received\":[\"from mail115.us4.mandrillapp.com (mail115.us4.mandrillapp.com [205.201.136.115]) by mail.example.com (Postfix) with ESMTP id AAAAAAAAAAA for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:21 +0000 (UTC)\",\"from localhost (127.0.0.1) by mail115.us4.mandrillapp.com id hhl55a14i282 for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (envelope-from <bounce-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mail115.us4.mandrillapp.com>)\"],\"Sender\":\"<example.sender@mail115.us4.mandrillapp.com>\",\"Subject\":\"This is an example webhook message\",\"To\":\"<inbound1@expatnyc.com>\",\"X-Report-Abuse\":\"Please forward a copy of this message, including all headers, to abuse@mandrill.com\"},\"html\":\"<p>This is an example inbound message.<\\/p><img src=\\\"http:\\/\\/mandrillapp.com\\/track\\/open.php?u=999&id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tags=_all,_sendexample.sender@mandrillapp.com\\\" height=\\\"1\\\" width=\\\"1\\\">\\n\",\"raw_msg\":\"Received: from mail115.us4.mandrillapp.com (mail115.us4.mandrillapp.com [205.201.136.115])\\n\\tby mail.example.com (Postfix) with ESMTP id AAAAAAAAAAA\\n\\tfor <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (UTC)\\nDKIM-Signature: v=1; a=rsa-sha1; c=relaxed\\/relaxed; s=mandrill; d=mail115.us4.mandrillapp.com;\\n h=From:Sender:Subject:List-Unsubscribe:To:Message-Id:Date:MIME-Version:Content-Type; i=example.sender@mail115.us4.mandrillapp.com;\\n bh=d60x72jf42gLILD7IiqBL0OBb40=;\\n b=iJd7eBugdIjzqW84UZ2xynlg1SojANJR6xfz0JDD44h78EpbqJiYVcMIfRG7mkrn741Bd5YaMR6p\\n 9j41OA9A5am+8BE1Ng2kLRGwou5hRInn+xXBAQm2NUt5FkoXSpvm4gC4gQSOxPbQcuzlLha9JqxJ\\n 8ZZ89\\/20txUrRq9cYxk=\\nDomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mandrill; d=mail115.us4.mandrillapp.com;\\n b=X6qudHd4oOJvVQZcoAEUCJgB875SwzEO5UKf6NvpfqyCVjdaO79WdDulLlfNVELeuoK2m6alt2yw\\n 5Qhp4TW5NegyFf6Ogr\\/Hy0Lt411r\\/0lRf0nyaVkqMM\\/9g13B6D9CS092v70wshX8+qdyxK8fADw8\\n kEelbCK2cEl0AGIeAeo=;\\nReceived: from localhost (127.0.0.1) by mail115.us4.mandrillapp.com id hhl55a14i282 for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (envelope-from <bounce-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mail115.us4.mandrillapp.com>)\\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed\\/relaxed; d=c.mandrillapp.com; \\n i=@c.mandrillapp.com; q=dns\\/txt; s=mandrill; t=1368214100; h=From : \\n Sender : Subject : List-Unsubscribe : To : Message-Id : Date : \\n MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User : \\n List-Unsubscribe; bh=y5Vz+RDcKZmWzRc9s0xUJR6k4APvBNktBqy1EhSWM8o=; \\n b=PLAUIuw8zk8kG5tPkmcnSanElxt6I5lp5t32nSvzVQE7R8u0AmIEjeIDZEt31+Q9PWt+nY\\n sHHRsXUQ9SZpndT9Bk++\\/SmyA2ntU\\/2AKuqDpPkMZiTqxmGF80Wz4JJgx2aCEB1LeLVmFFwB\\n 5Nr\\/LBSlsBlRcjT9QiWw0\\/iRvCn74=\\nFrom: <example.sender@mandrillapp.com>\\nSender: <example.sender@mail115.us4.mandrillapp.com>\\nSubject: This is an example webhook message\\nList-Unsubscribe: <mailto:unsubscribe-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mailin1.us2.mcsv.net?subject=unsub>\\nTo: <inbound1@expatnyc.com>\\nX-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com\\nX-Mandrill-User: md_999\\nMessage-Id: <999.20130510192820.aaaaaaaaaaaaaa.aaaaaaaa@mail115.us4.mandrillapp.com>\\nDate: Fri, 10 May 2013 19:28:20 +0000\\nMIME-Version: 1.0\\nContent-Type: multipart\\/alternative; boundary=\\\"_av-7r7zDhHxVEAo2yMWasfuFw\\\"\\n\\n--_av-7r7zDhHxVEAo2yMWasfuFw\\nContent-Type: text\\/plain; charset=utf-8\\nContent-Transfer-Encoding: 7bit\\n\\nThis is an example inbound message.\\n--_av-7r7zDhHxVEAo2yMWasfuFw\\nContent-Type: text\\/html; charset=utf-8\\nContent-Transfer-Encoding: 7bit\\n\\n<p>This is an example inbound message.<\\/p><img src=\\\"http:\\/\\/mandrillapp.com\\/track\\/open.php?u=999&id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tags=_all,_sendexample.sender@mandrillapp.com\\\" height=\\\"1\\\" width=\\\"1\\\">\\n--_av-7r7zDhHxVEAo2yMWasfuFw--\",\"sender\":null,\"spam_report\":{\"matched_rules\":[{\"description\":\"RBL: Sender listed at http:\\/\\/www.dnswl.org\\/, no\",\"name\":\"RCVD_IN_DNSWL_NONE\",\"score\":0},{\"description\":null,\"name\":null,\"score\":0},{\"description\":\"in iadb.isipp.com]\",\"name\":\"listed\",\"score\":0},{\"description\":\"RBL: Participates in the IADB system\",\"name\":\"RCVD_IN_IADB_LISTED\",\"score\":-0.4},{\"description\":\"RBL: ISIPP IADB lists as vouched-for sender\",\"name\":\"RCVD_IN_IADB_VOUCHED\",\"score\":-2.2},{\"description\":\"RBL: IADB: Sender publishes SPF record\",\"name\":\"RCVD_IN_IADB_SPF\",\"score\":0},{\"description\":\"RBL: IADB: Sender publishes Sender ID record\",\"name\":\"RCVD_IN_IADB_SENDERID\",\"score\":0},{\"description\":\"RBL: IADB: Sender publishes Domain Keys record\",\"name\":\"RCVD_IN_IADB_DK\",\"score\":-0.2},{\"description\":\"RBL: IADB: Sender has reverse DNS record\",\"name\":\"RCVD_IN_IADB_RDNS\",\"score\":-0.2},{\"description\":\"SPF: HELO matches SPF record\",\"name\":\"SPF_HELO_PASS\",\"score\":0},{\"description\":\"BODY: HTML included in message\",\"name\":\"HTML_MESSAGE\",\"score\":0},{\"description\":\"BODY: HTML: images with 0-400 bytes of words\",\"name\":\"HTML_IMAGE_ONLY_04\",\"score\":0.3},{\"description\":\"Message has a DKIM or DK signature, not necessarily valid\",\"name\":\"DKIM_SIGNED\",\"score\":0.1},{\"description\":\"Message has at least one valid DKIM or DK signature\",\"name\":\"DKIM_VALID\",\"score\":-0.1}],\"score\":-2.6},\"spf\":{\"detail\":\"sender SPF authorized\",\"result\":\"pass\"},\"subject\":\"This is an example webhook message\",\"tags\":[],\"template\":null,\"text\":\"This is an example inbound message.\\n\",\"text_flowed\":false,\"to\":[[\"inbound1@expatnyc.com\",null]]},\"ts\":1368214102},{\"event\":\"inbound\",\"msg\":{\"dkim\":{\"signed\":true,\"valid\":true},\"email\":\"inbound1@expatnyc.com\",\"from_email\":\"example.sender@mandrillapp.com\",\"headers\":{\"Content-Type\":\"multipart\\/alternative; boundary=\\\"_av-7r7zDhHxVEAo2yMWasfuFw\\\"\",\"Date\":\"Fri, 10 May 2013 19:28:20 +0000\",\"Dkim-Signature\":[\"v=1; a=rsa-sha1; c=relaxed\\/relaxed; s=mandrill; d=mail115.us4.mandrillapp.com; h=From:Sender:Subject:List-Unsubscribe:To:Message-Id:Date:MIME-Version:Content-Type; i=example.sender@mail115.us4.mandrillapp.com; bh=d60x72jf42gLILD7IiqBL0OBb40=; b=iJd7eBugdIjzqW84UZ2xynlg1SojANJR6xfz0JDD44h78EpbqJiYVcMIfRG7mkrn741Bd5YaMR6p 9j41OA9A5am+8BE1Ng2kLRGwou5hRInn+xXBAQm2NUt5FkoXSpvm4gC4gQSOxPbQcuzlLha9JqxJ 8ZZ89\\/20txUrRq9cYxk=\",\"v=1; a=rsa-sha256; c=relaxed\\/relaxed; d=c.mandrillapp.com; i=@c.mandrillapp.com; q=dns\\/txt; s=mandrill; t=1368214100; h=From : Sender : Subject : List-Unsubscribe : To : Message-Id : Date : MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User : List-Unsubscribe; bh=y5Vz+RDcKZmWzRc9s0xUJR6k4APvBNktBqy1EhSWM8o=; b=PLAUIuw8zk8kG5tPkmcnSanElxt6I5lp5t32nSvzVQE7R8u0AmIEjeIDZEt31+Q9PWt+nY sHHRsXUQ9SZpndT9Bk++\\/SmyA2ntU\\/2AKuqDpPkMZiTqxmGF80Wz4JJgx2aCEB1LeLVmFFwB 5Nr\\/LBSlsBlRcjT9QiWw0\\/iRvCn74=\"],\"Domainkey-Signature\":\"a=rsa-sha1; c=nofws; q=dns; s=mandrill; d=mail115.us4.mandrillapp.com; b=X6qudHd4oOJvVQZcoAEUCJgB875SwzEO5UKf6NvpfqyCVjdaO79WdDulLlfNVELeuoK2m6alt2yw 5Qhp4TW5NegyFf6Ogr\\/Hy0Lt411r\\/0lRf0nyaVkqMM\\/9g13B6D9CS092v70wshX8+qdyxK8fADw8 kEelbCK2cEl0AGIeAeo=;\",\"From\":\"<example.sender@mandrillapp.com>\",\"List-Unsubscribe\":\"<mailto:unsubscribe-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mailin1.us2.mcsv.net?subject=unsub>\",\"Message-Id\":\"<999.20130510192820.aaaaaaaaaaaaaa.aaaaaaaa@mail115.us4.mandrillapp.com>\",\"Mime-Version\":\"1.0\",\"Received\":[\"from mail115.us4.mandrillapp.com (mail115.us4.mandrillapp.com [205.201.136.115]) by mail.example.com (Postfix) with ESMTP id AAAAAAAAAAA for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:21 +0000 (UTC)\",\"from localhost (127.0.0.1) by mail115.us4.mandrillapp.com id hhl55a14i282 for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (envelope-from <bounce-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mail115.us4.mandrillapp.com>)\"],\"Sender\":\"<example.sender@mail115.us4.mandrillapp.com>\",\"Subject\":\"This is an example webhook message\",\"To\":\"<inbound1@expatnyc.com>\",\"X-Report-Abuse\":\"Please forward a copy of this message, including all headers, to abuse@mandrill.com\"},\"html\":\"<p>This is an example inbound message.<\\/p><img src=\\\"http:\\/\\/mandrillapp.com\\/track\\/open.php?u=999&id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tags=_all,_sendexample.sender@mandrillapp.com\\\" height=\\\"1\\\" width=\\\"1\\\">\\n\",\"raw_msg\":\"Received: from mail115.us4.mandrillapp.com (mail115.us4.mandrillapp.com [205.201.136.115])\\n\\tby mail.example.com (Postfix) with ESMTP id AAAAAAAAAAA\\n\\tfor <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (UTC)\\nDKIM-Signature: v=1; a=rsa-sha1; c=relaxed\\/relaxed; s=mandrill; d=mail115.us4.mandrillapp.com;\\n h=From:Sender:Subject:List-Unsubscribe:To:Message-Id:Date:MIME-Version:Content-Type; i=example.sender@mail115.us4.mandrillapp.com;\\n bh=d60x72jf42gLILD7IiqBL0OBb40=;\\n b=iJd7eBugdIjzqW84UZ2xynlg1SojANJR6xfz0JDD44h78EpbqJiYVcMIfRG7mkrn741Bd5YaMR6p\\n 9j41OA9A5am+8BE1Ng2kLRGwou5hRInn+xXBAQm2NUt5FkoXSpvm4gC4gQSOxPbQcuzlLha9JqxJ\\n 8ZZ89\\/20txUrRq9cYxk=\\nDomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mandrill; d=mail115.us4.mandrillapp.com;\\n b=X6qudHd4oOJvVQZcoAEUCJgB875SwzEO5UKf6NvpfqyCVjdaO79WdDulLlfNVELeuoK2m6alt2yw\\n 5Qhp4TW5NegyFf6Ogr\\/Hy0Lt411r\\/0lRf0nyaVkqMM\\/9g13B6D9CS092v70wshX8+qdyxK8fADw8\\n kEelbCK2cEl0AGIeAeo=;\\nReceived: from localhost (127.0.0.1) by mail115.us4.mandrillapp.com id hhl55a14i282 for <inbound1@expatnyc.com>; Fri, 10 May 2013 19:28:20 +0000 (envelope-from <bounce-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mail115.us4.mandrillapp.com>)\\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed\\/relaxed; d=c.mandrillapp.com; \\n i=@c.mandrillapp.com; q=dns\\/txt; s=mandrill; t=1368214100; h=From : \\n Sender : Subject : List-Unsubscribe : To : Message-Id : Date : \\n MIME-Version : Content-Type : From : Subject : Date : X-Mandrill-User : \\n List-Unsubscribe; bh=y5Vz+RDcKZmWzRc9s0xUJR6k4APvBNktBqy1EhSWM8o=; \\n b=PLAUIuw8zk8kG5tPkmcnSanElxt6I5lp5t32nSvzVQE7R8u0AmIEjeIDZEt31+Q9PWt+nY\\n sHHRsXUQ9SZpndT9Bk++\\/SmyA2ntU\\/2AKuqDpPkMZiTqxmGF80Wz4JJgx2aCEB1LeLVmFFwB\\n 5Nr\\/LBSlsBlRcjT9QiWw0\\/iRvCn74=\\nFrom: <example.sender@mandrillapp.com>\\nSender: <example.sender@mail115.us4.mandrillapp.com>\\nSubject: This is an example webhook message\\nList-Unsubscribe: <mailto:unsubscribe-md_999.aaaaaaaa.v1-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@mailin1.us2.mcsv.net?subject=unsub>\\nTo: <inbound1@expatnyc.com>\\nX-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com\\nX-Mandrill-User: md_999\\nMessage-Id: <999.20130510192820.aaaaaaaaaaaaaa.aaaaaaaa@mail115.us4.mandrillapp.com>\\nDate: Fri, 10 May 2013 19:28:20 +0000\\nMIME-Version: 1.0\\nContent-Type: multipart\\/alternative; boundary=\\\"_av-7r7zDhHxVEAo2yMWasfuFw\\\"\\n\\n--_av-7r7zDhHxVEAo2yMWasfuFw\\nContent-Type: text\\/plain; charset=utf-8\\nContent-Transfer-Encoding: 7bit\\n\\nThis is an example inbound message.\\n--_av-7r7zDhHxVEAo2yMWasfuFw\\nContent-Type: text\\/html; charset=utf-8\\nContent-Transfer-Encoding: 7bit\\n\\n<p>This is an example inbound message.<\\/p><img src=\\\"http:\\/\\/mandrillapp.com\\/track\\/open.php?u=999&id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&tags=_all,_sendexample.sender@mandrillapp.com\\\" height=\\\"1\\\" width=\\\"1\\\">\\n--_av-7r7zDhHxVEAo2yMWasfuFw--\",\"sender\":null,\"spam_report\":{\"matched_rules\":[{\"description\":\"RBL: Sender listed at http:\\/\\/www.dnswl.org\\/, no\",\"name\":\"RCVD_IN_DNSWL_NONE\",\"score\":0},{\"description\":null,\"name\":null,\"score\":0},{\"description\":\"in iadb.isipp.com]\",\"name\":\"listed\",\"score\":0},{\"description\":\"RBL: Participates in the IADB system\",\"name\":\"RCVD_IN_IADB_LISTED\",\"score\":-0.4},{\"description\":\"RBL: ISIPP IADB lists as vouched-for sender\",\"name\":\"RCVD_IN_IADB_VOUCHED\",\"score\":-2.2},{\"description\":\"RBL: IADB: Sender publishes SPF record\",\"name\":\"RCVD_IN_IADB_SPF\",\"score\":0},{\"description\":\"RBL: IADB: Sender publishes Sender ID record\",\"name\":\"RCVD_IN_IADB_SENDERID\",\"score\":0},{\"description\":\"RBL: IADB: Sender publishes Domain Keys record\",\"name\":\"RCVD_IN_IADB_DK\",\"score\":-0.2},{\"description\":\"RBL: IADB: Sender has reverse DNS record\",\"name\":\"RCVD_IN_IADB_RDNS\",\"score\":-0.2},{\"description\":\"SPF: HELO matches SPF record\",\"name\":\"SPF_HELO_PASS\",\"score\":0},{\"description\":\"BODY: HTML included in message\",\"name\":\"HTML_MESSAGE\",\"score\":0},{\"description\":\"BODY: HTML: images with 0-400 bytes of words\",\"name\":\"HTML_IMAGE_ONLY_04\",\"score\":0.3},{\"description\":\"Message has a DKIM or DK signature, not necessarily valid\",\"name\":\"DKIM_SIGNED\",\"score\":0.1},{\"description\":\"Message has at least one valid DKIM or DK signature\",\"name\":\"DKIM_VALID\",\"score\":-0.1}],\"score\":-2.6},\"spf\":{\"detail\":\"sender SPF authorized\",\"result\":\"pass\"},\"subject\":\"This is an example webhook message\",\"tags\":[],\"template\":null,\"text\":\"This is an example inbound message.\\n\",\"text_flowed\":false,\"to\":[[\"inbound1@expatnyc.com\",null]]},\"ts\":1368214102}]"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "posts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 05 Dec 2013 12:52:18 UTC +00:00], ["updated_at", Thu, 05 Dec 2013 12:52:18 UTC +00:00]]
+  [1m[35m (6.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 05 Dec 2013 12:52:18 UTC +00:00], ["updated_at", Thu, 05 Dec 2013 12:52:18 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 60ms (ActiveRecord: 13.2ms)

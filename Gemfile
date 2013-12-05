@@ -36,3 +36,9 @@ gem 'griddler'
 
 gem 'sanitize'
 
+gem 'rspec'
+gem 'rspec-rails'
+
+gem 'bootstrap-sass'
+
+gem 'bootstrap'
